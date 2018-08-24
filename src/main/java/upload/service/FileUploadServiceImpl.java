@@ -51,7 +51,6 @@ public class FileUploadServiceImpl implements FileUploadService {
     model.addAttribute("description", description);
     model.addAttribute("uploadedFiles", uploadedFiles);
     model.addAttribute("failedFiles", failedFiles);
-    model.addAttribute("size = "+uploadedFiles.size());
     return "uploadResult";
   }
 }

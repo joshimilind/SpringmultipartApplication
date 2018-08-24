@@ -30,8 +30,8 @@ public class UploadController {
   }
 
   @PostMapping("/uploadOneFile")
-  public String uploadOneFileHandlerPOST(HttpServletRequest request, //
-      Model model, @ModelAttribute("uploadEntity") UploadEntity uploadEntity) {
+  public String uploadOneFileHandlerPOST(HttpServletRequest request, Model model,
+      @ModelAttribute("uploadEntity") UploadEntity uploadEntity) {
     return this.fileUploadService.doUpload(request, model, uploadEntity);
   }
 
@@ -43,9 +43,8 @@ public class UploadController {
   }
 
   @PostMapping("/uploadMultiFile")
-  public String uploadMultiFileHandlerPOST(HttpServletRequest request, //
-      Model model, //
-      @ModelAttribute("uploadEntity") UploadEntity uploadEntity) {
+  public String uploadMultiFileHandlerPOST(HttpServletRequest request,
+      Model model, @ModelAttribute("uploadEntity") UploadEntity uploadEntity) {
     return this.fileUploadService.doUpload(request, model, uploadEntity);
   }
 }

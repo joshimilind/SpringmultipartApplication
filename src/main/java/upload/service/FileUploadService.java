@@ -6,6 +6,5 @@ import org.springframework.ui.Model;
 
 public interface FileUploadService {
 
-  public String doUpload(HttpServletRequest request, Model model, //
-      UploadEntity uploadEntity);
+  public String doUpload(HttpServletRequest request, Model model, UploadEntity uploadEntity);
 }
